@@ -19,6 +19,26 @@ RSpec.describe User, type: :model do
     expect(user).to_not be_valid
   end
 
+  it 'posts_counter should be valid if posts_counter 1' do
+    user.posts_counter = 1
+    expect(user).to be_valid
+  end
+
+  it 'posts_counter should be posts_counter 0' do
+    user.posts_counter = 0
+    expect(user).to be_valid
+  end
+
+  it 'posts_counter should be posts_counter -1' do
+    user.posts_counter = -1
+    expect(user).to_not be_valid
+  end
+
+  it 'posts_counter should be posts_counter mill' do
+    user.posts_counter = nil
+    expect(user).to_not be_valid
+  end
+
   it 'returns most recent posts' do
     post1 = user.posts.create(title: 'post1', comments_counter: 0, likes_counter: 0)
     post2 = user.posts.create(title: 'post2', comments_counter: 0, likes_counter: 0)
