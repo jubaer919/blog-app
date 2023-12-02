@@ -28,6 +28,36 @@ RSpec.describe Post, type: :model do
     expect(post).to_not be_valid
   end
 
+  it 'should be comments_counter is -1' do
+    post.comments_counter = -1
+    expect(post).to_not be_valid
+  end
+
+  it 'should be comments_counter is 0' do
+    post.comments_counter = 0
+    expect(post).to be_valid
+  end
+
+  it 'should be invalid if comments_counter is nill' do
+    post.comments_counter = nil
+    expect(post).to_not be_valid
+  end
+
+  it 'should be likes_counter is -1' do
+    post.likes_counter = -1
+    expect(post).to_not be_valid
+  end
+
+  it 'should be likes_counter is 0' do
+    post.likes_counter = 0
+    expect(post).to be_valid
+  end
+
+  it 'should be invalid if likes_counter is nill' do
+    post.likes_counter = nil
+    expect(post).to_not be_valid
+  end
+
   it 'most recent comments' do
     c1 = post.comments.create(user_id: user.id, post_id: post.id)
     c2 = post.comments.create(user_id: user.id, post_id: post.id)
