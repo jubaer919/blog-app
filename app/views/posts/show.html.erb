@@ -1,1 +1,24 @@
-<h1>here will be single post details</h1>
+<div class="user-container">
+  <div class="user-container">
+    <div class="full-post-container">
+      <div class="post-header">
+        <div class="post-title">
+          <h3>Post #<%= @post.id %></h3>
+          <h2><%= @user.name %></h2>
+        </div>
+        <div class="posts-s-container">
+          <p>Comments: <%= @post.comments_counter -%>
+          <p>Likes: <%= @post.likes_counter %>
+        </div>
+      </div>
+      <div class="post">
+        <%= @post.text %>
+      </div>
+    </div>
+    <div class="comment-container-post">
+      <% @post.comments.each do |comment|%>
+        <span><%= comment.user.name%> : <%= comment.text%></span>
+      <% end %>
+    </div>
+  </div>
+</div>
