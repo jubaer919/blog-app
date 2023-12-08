@@ -38,7 +38,7 @@
 
 .user-item-container {
   display: flex;
-  gap: 3rem
+  gap: 3rem;
 }
 
 .img-container {
@@ -114,17 +114,17 @@
 }
 
 .comment-container {
- border: 2px solid black;
- padding: 10px;
- flex: 1;
- margin:-15px 0 3rem 0;
+  border: 2px solid black;
+  padding: 10px;
+  flex: 1;
+  margin: -15px 0 3rem 0;
 }
 
 .comment-container-post {
-    border: 2px solid black;
-    padding: 10px;
-    flex: 1;
-    margin:15px 0 3rem 0;
+  border: 2px solid black;
+  padding: 10px;
+  flex: 1;
+  margin: 15px 0 3rem 0;
 }
 
 .post-header {
