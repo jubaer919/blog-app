@@ -52,6 +52,6 @@ RSpec.describe 'Users', type: :feature do
       visit user_path(@user1)
       click_link 'See all posts'
       expect(current_path).to eq(user_posts_path(user_id: @user1.id))
-    end 
+    end
   end
 end
