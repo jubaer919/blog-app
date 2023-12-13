@@ -134,6 +134,12 @@ Not deployed
 - Twitter: [@jubaer_maruf](https://twitter.com/jubaer_maruf)
 - LinkedIn: [Jubaer Maruf](https://www.linkedin.com/in/jubaer-maruf/)
 
+👤 **Vangelis**
+
+- GitHub: [vangelif](https://github.com/vangelif)
+- Twitter: [@vangfot](https://twitter.com/vangfot)
+- LinkedIn: [Vangelis](https://www.linkedin.com/in/vangfot/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
