@@ -140,6 +140,13 @@ Not deployed
 - Twitter: [@vangfot](https://twitter.com/vangfot)
 - LinkedIn: [Vangelis](https://www.linkedin.com/in/vangfot/)
 
+👤 **iwu John chinonso**
+
+- GitHub: [@githubhandle](https://github.com/maths29)
+- Twitter: [@twitterhandle](https://twitter.com/maths29)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/iwu-john-b92b01148/)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
