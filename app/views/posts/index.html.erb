@@ -16,7 +16,7 @@
     <% @posts.each do |post| %>
       <%= link_to user_post_path(@user, post) do %>
         <div class="post-container">
-          <h3>Post #<%= post.id %></h3>
+          <h3>Post #<%= post.id %> <%= post.title %></h3>
           <p> <%= post.text %> </p>
           <div class="posts-s-container">
             <p>Comments: <%= post.comments_counter -%>

@@ -24,6 +24,10 @@ RSpec.describe 'Posts', type: :feature do
       visit user_posts_path(user_id: @user.id)
       expect(page).to have_content(@post.text)
     end
+    it 'should render the title of the post' do
+      visit user_posts_path(user_id: @user.id)
+      expect(page).to have_content(@post.title)
+    end
     it 'should render the trimmed text of the post' do
       visit user_posts_path(user_id: @user.id)
       expect(page).to have_content(@post.text.truncate(40))
