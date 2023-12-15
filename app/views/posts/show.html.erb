@@ -4,7 +4,7 @@
       <div class="post-header">
         <div class="post-title">
           <h3>Post #<%= @post.id %></h3>
-          <h2><%= @user.name %></h2>
+          <h2><%= @post.author.name %></h2>
         </div>
         <div class="posts-s-container">
           <p>Comments: <%= @post.comments_counter -%>
@@ -13,6 +13,9 @@
       </div>
       <div class="post">
         <%= @post.text %>
+        <%if can? :destroy, @post %>
+            <%= button_to 'Delete', user_post_path(user_id: @post.author_id, id: @post.id), method: :delete, data: {confirm: 'Are you sure you want to delete this post ?'} %>
+        <% end %>
       </div>
     </div>
     <div class = "opinion">
@@ -24,6 +27,7 @@
     <div class="comment-container-post">
       <% @post.comments.each do |comment|%>
         <p></p><span><%= comment.user.name%> : <%= comment.text%></span></p>
+        <%= button_to 'Delete Comment', user_post_comment_path(user_id: comment.user_id, post_id: comment.post_id, id: comment.id), method: :delete, class: 'button' if can? :destroy, comment %>
       <% end %>
     </div>
   </div>
