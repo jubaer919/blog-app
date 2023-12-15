@@ -3,7 +3,6 @@ class CommentsController < ApplicationController
 
   def new
     @user = current_user
-    # @post = Post.find_by(params[:user_id])
     @comment = Comment.new
   end
 
